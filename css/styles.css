@@ -25,9 +25,23 @@ body {
   line-height: 1.71;
 }
 
-.list {
-  list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
+
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+
 /* Header section*/
 
 .logo {
@@ -117,6 +131,8 @@ body {
   line-height: 1.17;
   text-align: center;
 }
+.about-item {
+}
 /* Team section */
 .team {
   background-color: var(--third-bg-color);
@@ -167,6 +183,19 @@ body {
 }
 
 /* Portfolio */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 .main-button {
   color: var(--title-text-color);
