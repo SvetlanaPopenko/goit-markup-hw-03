@@ -320,6 +320,15 @@ margin-bottom: 9px;
   margin: -1px;
 }
 
+.main-list {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.main-items-button:not(:last-child) {
+margin-right: 8px;
+}
+
 .main-button {
   color: var(--title-text-color);
   background-color: var(--third-bg-color);
@@ -341,12 +350,23 @@ margin-bottom: 9px;
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
+.main-items {
+  --items:9;
+}
+.main-desk {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
 .main-service {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 .main-direction {
   font-size: 16px;
