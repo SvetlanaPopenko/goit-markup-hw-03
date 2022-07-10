@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
     <title>Студия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet" />
+   
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -39,12 +41,12 @@
           </li>
         </ul>
       </nav>
-      <div>
+      <div class="header-promo">
         <a class="header-mail link" lang="en" href="mailto:info@devstudio.com"
           >info@devstudio.com</a
         >
         <a class="header-phone link" lang="en" href="tel:+380961111111"
-          >+38096 111 11 11</a
+          >+38 096 111 11 11</a
         >
       </div>
       </div>
@@ -53,12 +55,12 @@
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <div class="container ">
+        <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-btn" type="button">Заказать услугу</button>
       </section>
     </div>
-      <section class="features">
+      <section class="features section">
         <div class="container">
         <h2 class="visually-hidden">Особенности</h2>
         <ul class="features-list list">
@@ -129,11 +131,11 @@
         </div>
       </section>
       <!-- Team section -->
-      <section class="team">
+      <section class="team section">
         <div class="container">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="team-list list">
-          <li class="team-item">
+        <ul class="team-list list card-set">
+          <li class="team-item card-set-item">
             <img
               class="team-img"
               src="./images/team/1.jpg"
@@ -141,10 +143,12 @@
               width="270"
               height="260"
             />
-            <h3 class="team-uppertitle">Игорь Демьяненко</h3>
+           <div class="team-wrapper">
+            <h3 class="team-subtitle">Игорь Демьяненко</h3>
             <p class="team-desc" lang="en">Product Designer</p>
+           </div>
           </li>
-          <li class="team-item">
+          <li class="team-item card-set-item">
             <img
               class="team-img"
               src="./images/team/2.jpg"
@@ -152,10 +156,12 @@
               width="270"
               height="260"
             />
-            <h3 class="team-uppertitle">Ольга Репина</h3>
-            <p class="team-desc" lang="en">Frontend Developer</p>
+            <div class="team-wrapper">
+              <h3 class="team-subtitle">Ольга Репина</h3>
+              <p class="team-desc" lang="en">Frontend Developer</p>
+            </div>
           </li>
-          <li class="team-item">
+          <li class="team-item card-set-item">
             <img
               class="team-img"
               src="./images/team/3.jpg"
@@ -163,10 +169,12 @@
               width="270"
               height="260"
             />
-            <h3 class="team-uppertitle">Николай Тарасов</h3>
-            <p class="team-desc" lang="en">Marketing</p>
+            <div class="team-wrapper">
+              <h3 class="team-subtitle">Николай Тарасов</h3>
+              <p class="team-desc" lang="en">Marketing</p>
+            </div>
           </li>
-          <li class="team-item">
+          <li class="team-item card-set-item">
             <img
               class="team-img"
               src="images/team/4.jpg"
@@ -174,8 +182,10 @@
               width="270"
               height="260"
             />
-            <h3 class="team-uppertitle">Михаил Ермаков</h3>
+           <div class="team-wrapper">
+            <h3 class="team-subtitle">Михаил Ермаков</h3>
             <p class="team-desc" lang="en">UI Designer</p>
+           </div>
           </li>
         </ul>
       </div>
@@ -184,7 +194,7 @@
     <!-- Footer section -->
     <footer class="footer">
       <div class="container">
-      <a class="logo link" href="./index.html" lang="en"
+      <a class="logo link logo-second" href="./index.html" lang="en"
         >Web<span class="logo-footer">Studio</span></a
       >
       <address class="footer-address">
@@ -205,7 +215,7 @@
           </li>
           <li class="footer-item">
             <a class="footer-phone link" lang="en" href="tel:+380991111111"
-              >+38099 111 11 11</a
+              >+38 099 111 11 11</a
             >
           </li>
         </ul>
