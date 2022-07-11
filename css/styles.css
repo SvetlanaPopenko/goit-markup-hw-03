@@ -314,7 +314,7 @@ img {
 }
 
 .footer-address {
-  font-style: normal;
+  font-style: inherit;
 }
 
 .footer-item:not(:last-child) {
@@ -343,12 +343,9 @@ img {
 
 .main-list {
   display: flex;
+  gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.main-items-button:not(:last-child) {
-  margin-right: 8px;
 }
 
 .main-button {
