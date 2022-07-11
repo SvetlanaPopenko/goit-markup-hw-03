@@ -83,7 +83,7 @@ img {
 /* Header section*/
 
 .header {
-  border: 1px solid var(--border-header-color);
+  border-bottom: 1px solid var(--border-header-color);
 }
 
 .header-nav {
